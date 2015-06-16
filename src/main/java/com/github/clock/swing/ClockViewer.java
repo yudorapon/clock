@@ -31,6 +31,7 @@ public class ClockViewer extends JComponent{
     private Args args;
 
     public ClockViewer(Clock clock , Args args){
+        this.args = args;
         clock.addUpdateObserver(new UpdateObserver(){
             @Override
             public void update(Clock clock) {
